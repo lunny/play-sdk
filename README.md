@@ -14,7 +14,7 @@ play-sdk is an unofficial sdk for go play api.
 
 Make sure you have the a working Go environment. See the [install instructions](http://golang.org/doc/install.html). 
 
-To install xweb, simply run:
+To install play-sdk, simply run:
 
     go get github.com/lunny/play-sdk
 
@@ -25,7 +25,7 @@ Please visit [GoWalker](http://gowalker.org/github.com/lunny/play-sdk)
 
 ## About
 
-xweb was written by [Lunny Xiao](http://about.me/lunny). 
+play-sdk was written by [Lunny Xiao](http://about.me/lunny). 
 
 ## License
 BSD License
