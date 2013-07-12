@@ -52,6 +52,8 @@ func TestShare(t *testing.T) {
 		return
 	}
 
+	fmt.Println(formatCodes)
+
 	res, err := Share(formatCodes)
 	if err != nil {
 		t.Error(err)

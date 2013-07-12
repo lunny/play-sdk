@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"strings"
 )
 
 type Result struct {
@@ -80,8 +81,8 @@ func Compile(codes string) (*Result, error) {
 
 func Share(codes string) (string, error) {
 	client := &http.Client{}
-	resp, err := client.PostForm("http://play.golang.org/share",
-		url.Values{"": {codes}})
+	resp, err := client.Post("http://play.golang.org/share",
+		"application/x-www-form-urlencoded", strings.NewReader(codes))
 	if err != nil {
 		return "", err
 	}
